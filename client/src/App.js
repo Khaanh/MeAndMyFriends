@@ -1,8 +1,15 @@
-// import { Route, Routes } from "react-router-dom";
-import "./App.css";
-// import Navigation from "./components/Navigation";
-// import MyFriends from "./components/pages/MyFriends";
+import { Link, Route, Routes } from "react-router-dom";
+
+import Navigation from "./components/Navigation";
+
 import friendsInfo from "./data/myFriendsData.json";
+// Import pages
+import MyPortfolio from "./components/pages/MyPortfolio";
+import MyFriends from "./components/pages/MyFriends";
+import JoinOurTeam from "./components/pages/JoinOurTeam";
+import NotFoundPage from "./components/pages/NotFoundPage";
+import AboutMe from "./components/pages/AboutMe";
+import HomePage from "./components/pages/HomePage";
 
 // const Data = [
 // 	{
@@ -59,14 +66,16 @@ import friendsInfo from "./data/myFriendsData.json";
 function App() {
 	return (
 		<div>
-			{friendsInfo.map((item) => (
-				<div>
-					<p>
-						<img src={item.image} />
-					</p>
-					<p>{item.biography}</p>
-				</div>
-			))}
+			<Routes>
+				<Route path="/" element={<Navigation />}>
+					<Route index element={<HomePage />} />
+					<Route path="about-me" element={<AboutMe />} />
+					<Route path="my-friends" element={<MyFriends />} />
+					<Route path="my-portfolio" element={<MyPortfolio />} />
+					<Route path="join-our-team" element={<JoinOurTeam />} />
+					<Route path="*" element={<NotFoundPage />} />
+				</Route>
+			</Routes>
 		</div>
 	);
 }
