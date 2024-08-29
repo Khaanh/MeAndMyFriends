@@ -8,39 +8,33 @@ const Navigation = () => {
 			<header className="flex justify-center mt-8 mb-8">
 				<nav>
 					<li>
-						<NavLink className={`${checkActive} mx-3 text-xl`} to="/">
+						<NavLink className="mx-3 text-xl" to="/">
 							Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className={`${checkActive} mx-3 text-xl`} to="about-me">
+						<NavLink className="mx-3 text-xl" to="about-me">
 							About me
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className={`${checkActive} mx-3 text-xl`} to="my-friends">
+						<NavLink className="mx-3 text-xl" to="my-friends">
 							My Friends
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={`${checkActive} mx-3 text-xl`}
-							to="my-portfolio"
-						>
+						<NavLink className="mx-3 text-xl" to="my-portfolio">
 							My Portfolio
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={`${checkActive} mx-3 text-xl`}
-							to="join-our-team"
-						>
+						<NavLink className="mx-3 text-xl" to="join-our-team">
 							Join Our Team
 						</NavLink>
 					</li>
 				</nav>
 			</header>
-			<div className="container px-14">
+			<div className="container mx-auto px-3">
 				<Outlet />
 			</div>
 		</>

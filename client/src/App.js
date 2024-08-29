@@ -1,8 +1,7 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
 
-import friendsInfo from "./data/myFriendsData.json";
 // Import pages
 import MyPortfolio from "./components/pages/MyPortfolio";
 import MyFriends from "./components/pages/MyFriends";
@@ -11,7 +10,6 @@ import NotFoundPage from "./components/pages/NotFoundPage";
 import AboutMe from "./components/pages/AboutMe";
 import HomePage from "./components/pages/HomePage";
 
-// const Data = [
 // 	{
 // 		id: 0,
 // 		name: "bernie-mac",
@@ -81,3 +79,6 @@ function App() {
 }
 
 export default App;
+
+// 29.08.24
+// TODO: 1. On "MyFriends" page reduce some text in biography section and make button "read more"

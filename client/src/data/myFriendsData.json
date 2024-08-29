@@ -1,15 +1,15 @@
 [
 	{
 		"id": 0,
-		"name": "bernie-mac",
-		"biography": " (October 5, 1957 – August 9, 2008),[1] better known by his stage name Bernie Mac, was an American comedian and actor. Born and raised on Chicago's South Side, Mac gained popularity as a stand-up comedian. He joined fellow comedians Steve Harvey, Cedric the Entertainer, and D. L. Hughley in the film The Original Kings of Comedy.",
-		"image": "img/bernie-mac.jpg"
-	},
-	{
-		"id": 1,
 		"name": "brad-pitt",
 		"biography": "is an American actor and film producer. He is the recipient of various accolades, including two Academy Awards, two British Academy Film Awards, two Golden Globe Awards, and a Primetime Emmy Award. One of the most influential celebrities, Pitt appeared on Forbes' annual Celebrity 100 list from 2006 to 2008, and the Time 100 list in 2007.",
 		"image": "img/brad-pitt.jpg"
+	},
+	{
+		"id": 1,
+		"name": "george-clooney",
+		"biography": "(born May 6, 1961) is an American actor and filmmaker. Known for his work in both blockbuster and independent films, he has received numerous accolades, including two Academy Awards, a British Academy Film Award and four Golden Globe Awards. His honors include the Cecil B. DeMille Award, the Honorary César, the AFI Life Achievement Award, and the Kennedy Center Honor",
+		"image": "img/george-clooney.jpg"
 	},
 	{
 		"id": 2,
@@ -25,9 +25,9 @@
 	},
 	{
 		"id": 4,
-		"name": "george-clooney",
-		"biography": "(born May 6, 1961) is an American actor and filmmaker. Known for his work in both blockbuster and independent films, he has received numerous accolades, including two Academy Awards, a British Academy Film Award and four Golden Globe Awards. His honors include the Cecil B. DeMille Award, the Honorary César, the AFI Life Achievement Award, and the Kennedy Center Honor",
-		"image": "img/george-clooney.jpg"
+		"name": "bernie-mac",
+		"biography": " (October 5, 1957 – August 9, 2008),[1] better known by his stage name Bernie Mac, was an American comedian and actor. Born and raised on Chicago's South Side, Mac gained popularity as a stand-up comedian. He joined fellow comedians Steve Harvey, Cedric the Entertainer, and D. L. Hughley in the film The Original Kings of Comedy.",
+		"image": "img/bernie-mac.jpg"
 	},
 	{
 		"id": 5,
