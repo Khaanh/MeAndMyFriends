@@ -5,9 +5,9 @@ const checkActive = ({ isActive }) => (isActive ? "is-active" : "");
 const Navigation = () => {
 	return (
 		<>
-			<header className="flex justify-center mt-8 mb-8">
-				<nav>
-					<li>
+			<header className="flex justify-center mt-8 mb-36">
+				<nav className="flex list-none">
+					<li className="">
 						<NavLink className="mx-3 text-xl" to="/">
 							Home
 						</NavLink>
