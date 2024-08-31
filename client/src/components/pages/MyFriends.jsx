@@ -1,7 +1,12 @@
+import { useState } from "react";
 import dataFriends from "../../data/myFriendsData.json";
 
 const MyFriends = () => {
-	const handle = (e) => {};
+	const [readMore, setReadMore] = useState(false);
+
+	function handleClick(e) {
+		console.log(e.target);
+	}
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-14 mb-8">
@@ -20,9 +25,11 @@ const MyFriends = () => {
 						</h1>
 						<div>
 							<p className="font-light italic text-lg">
-								{friend.biography.slice(0, 200)}...
+								{readMore
+									? friend.biography
+									: `${friend.biography.slice(0, 200)}...`}
 							</p>
-							<button onClick={(e) => handle}>Read more</button>
+							<button onClick={() => setReadMore(!readMore)}>Read more</button>
 						</div>
 					</div>
 				))}
