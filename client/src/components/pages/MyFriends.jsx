@@ -2,17 +2,19 @@ import { useState } from "react";
 import dataFriends from "../../data/myFriendsData.json";
 
 const MyFriends = () => {
-	const [readMore, setReadMore] = useState(false);
+	const [readMore, setReadMore] = useState(null);
 
-	function handleClick(e) {
-		console.log(e.target);
-	}
+	const handleReadMore = (id) => {
+		setReadMore(id !== readMore ? id : null);
+
+		// setReadMore(id);
+	};
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-14 mb-8">
 			{dataFriends.length > 0 &&
 				dataFriends.map((friend) => (
-					<div>
+					<div key={friend.id}>
 						<div className="mb-3 h-80">
 							<img
 								src={friend.image}
@@ -25,11 +27,13 @@ const MyFriends = () => {
 						</h1>
 						<div>
 							<p className="font-light italic text-lg">
-								{readMore
+								{readMore === friend.id
 									? friend.biography
 									: `${friend.biography.slice(0, 200)}...`}
 							</p>
-							<button onClick={() => setReadMore(!readMore)}>Read more</button>
+							<button onClick={() => handleReadMore(friend.id)}>
+								Read more
+							</button>
 						</div>
 					</div>
 				))}
